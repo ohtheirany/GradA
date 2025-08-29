@@ -6,7 +6,14 @@ const base44 = {
     Item: { findMany: () => Promise.resolve([]) },
     MiniReflection: { findMany: () => Promise.resolve([]) }
   },
-  auth: { user: null }
+  auth: { 
+    user: {
+      id: "mock-user-123",
+      email: "user@example.com",
+      name: "Test User",
+      onboardingComplete: true
+    }
+  }
 };
 
 // Rest of the file stays the same
